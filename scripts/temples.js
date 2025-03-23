@@ -1,13 +1,16 @@
-// Toggle Navigation Menu for Mobile View
-document.getElementById("menu-btn").addEventListener("click", function() {
-  let navMenu = document.getElementById("nav-menu").querySelector("ul");
-  if (navMenu.style.display === "block") {
-      navMenu.style.display = "none";
-  } else {
-      navMenu.style.display = "block";
-  }
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-// Footer Year & Last Modified Date
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("last-modified").textContent = document.lastModified;
+  if (menuToggle && menu) {
+      menuToggle.addEventListener("click", function () {
+          menu.classList.toggle("open");
+          // Toggle between hamburger (☰) and close (✖) icon
+          menuToggle.textContent = menu.classList.contains("open") ? "✖" : "☰";
+      });
+  } else {
+      console.error("Menu toggle button or menu not found in DOM.");
+  }    // Dynamic Footer Updates
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+});

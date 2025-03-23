@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Akuegbo Iheanyi Ejeagba, Filtered Temple Album">
+    <meta name="author" content="Akuegebo Iheanyi Ejeagba">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preload" fetchpriority="high" as="image"
+        href="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/london-england/400x250/london-england-temple-lds-784251-wallpaper.jpg"
+        type="image/jpg">
+</head>
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+
+            <!--button for hamburger menu, to be visible only on mobile view-->
+        <button id="menu" aria-label="menu"></button>
+        <!--navigation-->
+        <nav>
+            <a id="home-button" href='#'>Home</a>
+            <a id="old-button" href='#'>Old</a>
+            <a id="new-button" href='#'>New</a>
+            <a id="large-button" href='#'>Large</a>
+            <a id="small-button" href='#'>Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="page-heading"></h2>
+        <!--section for temple pictures, from JS temple object array-->
+        <section id="temples">
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌼 Akuegbo Iheanyi Ejeagba, 🌼 Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
