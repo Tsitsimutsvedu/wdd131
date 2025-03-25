@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Temple Album</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Akuegbo Iheanyi Ejeagba, Filtered Temple Album">
-    <meta name="author" content="Akuegebo Iheanyi Ejeagba">
+    <title>WDD 131 - Temple Album</title>
+    <meta name="description" content="A temple album page with selections of temple pictures">
+    <meta name="author" content="Tsitsi Mutsvedu">
     <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <script src="scripts/filtered-temples.js" defer></script>
-    <link rel="preload" fetchpriority="high" as="image"
-        href="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/london-england/400x250/london-england-temple-lds-784251-wallpaper.jpg"
-        type="image/jpg">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Filtered Temple Album</h1>
-
-            <!--button for hamburger menu, to be visible only on mobile view-->
-        <button id="menu" aria-label="menu"></button>
-        <!--navigation-->
+        <h1>Temple Album</h1>
         <nav>
-            <a id="home-button" href='#'>Home</a>
-            <a id="old-button" href='#'>Old</a>
-            <a id="new-button" href='#'>New</a>
-            <a id="large-button" href='#'>Large</a>
-            <a id="small-button" href='#'>Small</a>
+            <a href="#" id="all-temples">Home</a>
+            <a href="#" id="old-temples">Old</a>
+            <a href="#" id="new-temples">New</a>
+            <a href="#" id="large-temples">Large</a>
+            <a href="#" id="small-temples">Small</a>
         </nav>
+        <button id="menu"></button>
     </header>
-
     <main>
-        <h2 id="page-heading"></h2>
-        <!--section for temple pictures, from JS temple object array-->
-        <section id="temples">
-        </section>
-
+        <h2 id="selection">Home</h2>
+        <div id="gallery">
+            
+        </div> 
     </main>
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> 🌼 Akuegbo Iheanyi Ejeagba, 🌼 Nigeria
-        </p>
+        <p>&copy;<span id="currentyear"></span> | Tsitsi Mutsvedu | Capetown, South Africa</p>
         <p id="lastModified"></p>
     </footer>
 </body>
