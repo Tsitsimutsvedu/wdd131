@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Cape Town Hiking & Adventure Community</title>
+    <meta name="description" content="A page containing a description of the page startup and a simple form to submit feedback.">
+    <meta name="author" content="Tsitsi Mutsvedu">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Cape Town Hiking & Adventure Community</h1>
+        <button id="menu"></button>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="form.html">Sign Up</a>
+            <a href="hiking.html">Hiking</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px )" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="A picture of Table Mountain">
+            </picture>
+            <div class="calltoaction">
+                
+                <h2>About Us</h2>
+            </div>
+        </div>
+        <section>
+            
+            <h2>Our Story</h2>
+
+            <p>The Cape Town Hiking & Adventure Community is a vibrant group of outdoor enthusiasts who explore the 
+                natural wonders of Cape Town. They organize hikes to iconic spots like Table Mountain, Lion's Head, 
+                and the Cape Point trails, offering breathtaking views and thrilling experiences. 
+                Members also enjoy adventures such as rock climbing, kayaking, and nature photography. 
+                The community welcomes people of all fitness levels, fostering a friendly and supportive atmosphere. 
+                It's a place to make new friends, share stories, and create lasting memories while appreciating the beauty 
+                of nature. For members, it's not just adventure—it's a way of life!</p>
+        </section>
+        
+        <h2>Share Your Feedback With Us!</h2>
+        
+        <form  method="get" action="thanks.html" class="wf">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>First Name <input type="text" name="fname"></label>
+                <label>Last Name <input type="text" name="lname"></label>
+                <label>Email <input type="email" name="email" required placeholder="someone@mail.com"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <textarea name="feedback" id="feednack" placeholder="write your feedback here..." rows="6"></textarea>
+            </fieldset>
+            <input type="submit" value="Send Feedback">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Cape Town Hiking & Adventure Community | Capetown, South Africa</p>
+        <p>Tsitsi Mutsvedu</p>
+    </footer>
+</body>
+</html>
